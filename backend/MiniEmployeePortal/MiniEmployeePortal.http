@@ -1,0 +1,6 @@
+@MiniEmployeePortal_HostAddress = http://localhost:5289
+
+GET {{MiniEmployeePortal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
