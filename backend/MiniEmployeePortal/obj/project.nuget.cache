@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K59As6YvKzA=",
+  "dgSpecHash": "6gtRPd0wjdE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jayanth.Bandi\\source\\repos\\MiniEmployeePortal\\MiniEmployeePortal\\MiniEmployeePortal.csproj",
+  "projectFilePath": "C:\\Users\\Jayanth.Bandi\\OneDrive - Coforge Limited\\Desktop 1\\MiniEmployeePortal\\backend\\MiniEmployeePortal\\MiniEmployeePortal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jayanth.Bandi\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\Jayanth.Bandi\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
