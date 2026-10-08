@@ -3743,11 +3743,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jayanth.Bandi\\OneDrive - Coforge Limited\\Desktop 1\\MiniEmployeePortal\\backend\\MiniEmployeePortal\\MiniEmployeePortal.csproj",
+      "projectUniqueName": "C:\\Users\\Jayanth.Bandi\\source\\repos\\MiniEmployeePortal\\MiniEmployeePortal\\MiniEmployeePortal.csproj",
       "projectName": "MiniEmployeePortal",
-      "projectPath": "C:\\Users\\Jayanth.Bandi\\OneDrive - Coforge Limited\\Desktop 1\\MiniEmployeePortal\\backend\\MiniEmployeePortal\\MiniEmployeePortal.csproj",
+      "projectPath": "C:\\Users\\Jayanth.Bandi\\source\\repos\\MiniEmployeePortal\\MiniEmployeePortal\\MiniEmployeePortal.csproj",
       "packagesPath": "C:\\Users\\Jayanth.Bandi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jayanth.Bandi\\OneDrive - Coforge Limited\\Desktop 1\\MiniEmployeePortal\\backend\\MiniEmployeePortal\\obj\\",
+      "outputPath": "C:\\Users\\Jayanth.Bandi\\source\\repos\\MiniEmployeePortal\\MiniEmployeePortal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
