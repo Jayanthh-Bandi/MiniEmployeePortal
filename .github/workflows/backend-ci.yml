@@ -1,37 +1,35 @@
 name: Backend CI
 
 on:
-  push:
-    branches:
-      - main
- 
-  pull_request:
-    branches:
-      - main
+push:
+branches:
+- main
+
+pull_request:
+branches:
+- main
 
 permissions:
-  contents: read
+contents: read
 
 jobs:
-  backend-build:
+backend-build-and-test:
+runs-on: ubuntu-latest
 
-    runs-on: ubuntu-latest
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v7
 
-    steps:
+  - name: Setup .NET 10
+    uses: actions/setup-dotnet@v6
+    with:
+      dotnet-version: '10.0.x'
 
-      - name: Checkout repository
-        uses: actions/checkout@v7
+  - name: Restore dependencies
+    run: dotnet restore backend/MiniEmployeePortal.Tests/MiniEmployeePortal.Tests.csproj
 
-      - name: Setup .NET 10
-        uses: actions/setup-dotnet@v6
-        with:
-          dotnet-version: '10.0.x'
+  - name: Build backend
+    run: dotnet build backend/MiniEmployeePortal.Tests/MiniEmployeePortal.Tests.csproj --no-restore --configuration Release
 
-      - name: Display .NET version
-        run: dotnet --version
-
-      - name: Restore backend dependencies
-        run: dotnet restore backend/MiniEmployeePortal/MiniEmployeePortal.csproj
-
-      - name: Build backend
-        run: dotnet build backend/MiniEmployeePortal/MiniEmployeePortal.csproj --no-restore --configuration Release
+  - name: Run unit tests
+    run: dotnet test backend/MiniEmployeePortal.Tests/MiniEmployeePortal.Tests.csproj --no-build --configuration Release --logger "console;verbosity=normal"
